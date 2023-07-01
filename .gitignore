@@ -1,8 +1,8 @@
 # Virtual environments
 pyvenv.cfg
+lib64
 bin/
 include/
 lib/
-test_prj/currency/__pycache__/
-test_prj/test_prj/__pycache__/
+**/__pycache__/
 
