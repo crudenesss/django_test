@@ -4,6 +4,26 @@
 
     <h1>Currency</h1>
     <p>This table describes USD to UAH rate (2021)</p>
+    <a href="/">Go back</a>
+    
+    <table>
+      <tr>
+        <th>Exchange date</th>
+        <th>Currency code</th>
+        <th>Name</th>
+        <th>Rate</th>
+        <th>Calculation date</th>
+      </tr>
+      {% for item in data %}
+        <tr>
+          <td>{{ item.exchangedate }}</td>
+          <td>{{ item.cc }}</td>
+          <td>{{ item.enname }}</td>
+          <td>{{ item.rate }}</td>
+          <td>{{ item.calcdate }}</td>
+        </tr>
+      {% endfor %}
+    </table>
 
   </body>
 </html>
