@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>My project</title>
+  {% load bootstrap5 %}
+  {% bootstrap_css %}
+  {% bootstrap_javascript %}
+</head>
   <body>
-
-    <h1>Home</h1>
-    <p>Welcome to my first Django project!</p>
-    <a href="table/">Check currency</a>
+    <div class="container p-5 my-5 bg-dark text-white">
+  
+      <h1>Home</h1>
+      <p>Welcome to my first Django project!</p>
+      
+    </div>
+    <div class="container pt-2 d-grid">
+    <a class="btn btn-block p-4 btn-outline-light text-dark" href="table/">Check currency</a>
+    </div>
 
   </body>
 </html>
